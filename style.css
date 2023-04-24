@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Kanit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    list-style:none;
+    text-decoration: none;
+    scroll-behavior:smooth;
+}
+ :root{
+    --bg-color: #020312;
+    --text-color:#fff;
+    --main-color:#eb4a4a;
+    --second-color:gray;
+    --other-color:#12141c;
+    --h1-font:5rem;
+    --h2-font:3.5rem;
+    --p-font:1.1rem;
+
+ }
+ BODY{
+    background-color: var(--bg-color);
+    color:var(--text-color)
+ }
+ .logo img{
+    height:auto;
+    width: 100px;
+
+ }
+ header{
+    position:fixed;
+    width:100%;
+    right:0;
+    top:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:26px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s ease ;
+ }
+ .navbar{
+    display: flex;
+
+ }
+ .navbar a{
+color: white;
+font-size:var(--p-font);
+font-weight: 600;
+padding: 10px 25px;
+margin:(0px 2px);
+border-radius:0.5rem;
+transition:all 0.40s ease;
+ }
+
+ .navbar a:hover{
+    background-color: var(--main-color);
+    color:var(--text-color)
+ }
+ #menu-icon{
+    font-size:36px;
+    color:var(--text-color);
+    cursor:pointer;
+    display:none;
+    z-index:100001;
+ }
+
+ section{
+    padding:160px 16% 90px;
+   
+  }
+  .home{
+
+   height:100vh;
+    width:100%;
+    position: relative;
+    background: url(images/cover.jpg);
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ .home-text h1{
+    margin:20px o;
+    font-size:2.5rem;
+    line-height:1.5;
+    letter-spacing: 2px;
+ }
+ .vj{
+    color:#eb4a4a;
+    font-weight:bolder;
+ }
+ .home-text h3{
+    color:var(--main-color);
+    font-size:20px;
+ }
+ .home-text h4{
+   margin-top: 10px;
+   margin-bottom: 10px;
+    font-size:20px;
+ }
+ .btn{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 40px;
+    border-radius:0.5rem;
+    background-color: var(--main-color);
+    color:var(--text-color);
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    animation: mymove 5s infinite;
+ }
+
+ @keyframes btn {
+    0%{border-top: white;}
+    25%{border-right:white}
+    75%{border-bottom:white}
+    100%{border-left:white}
+
+    
+ }
+ .btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    border: 2px solid white;
+    background: transparent;
+ }
+
+.about{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    justify-content: center;
+   
+
+}
+ 
+.about-text h4{
+color:var(--main-color);
+margin:10px 0px;
+font-size: 20px;
+color:#eb4a4a;
+}
+
+.about-text h2{
+    font-size:var(--h2-font);
+}
+
+.about-text p{
+    color:var(--second-color);
+    font-size:var(--p-font);
+    line-height:30px;
+    margin-bottom: 2rem;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, auto));
+    align-items:center;
+    gap:0.8rem;
+    margin-bottom: 3rem;
+}
+.about-in h5{
+    font-size:22px;
+}
+.main-text{
+    text-align:center;
+}
+.main-text h2{
+    font-size:var(--h2-font);
+    margin-bottom:15px;
+}
+.main-text h4{
+    font-size:24px;
+   color:var(--main-color);
+}
+.services-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items:center;
+    text-align:center;
+    gap:2rem;
+    margin:3rem;
+}
+.services-content img{
+    height:60px;
+}
+.box{
+    padding:45px;
+    background-color: #12141c;
+    border-top:5px solid transparent;
+    transition: all 0.40s ease;
+}
+.box h3{
+    margin-top:2rem;
+}
+.box p{
+    margin-top:2rem;
+    color:var(--main-color)
+}
+.box:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top:5px solid var(--main-color);
+}
+.portfolio-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items:center;
+    text-align:center;
+    gap:2rem;
+    margin:3rem;
+}
+.portfolio-content img{
+    height:200px;
+}
+.portfolio-content h6{
+    font-size: 16px;
+    margin: 8px;
+}
+.row{
+    background: #12141c;
+    padding:25px;
+    border-radius:0.5rem;
+    transition:all 0.40 ease;
+}
+.row:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top:5px solid var(--main-color);
+}
+.contact-text h2{
+    font-size:var(--h2-font);
+    
+
+}
+
+.contact{
+    margin-top: 0px;
+    display: flex;
+}
+.contact h2{
+    font-size: x-large;
+    text-align: center;
+}
